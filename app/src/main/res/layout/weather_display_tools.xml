@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/weatherDisplay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_background">
+
+    <ImageView
+        android:id="@+id/weatherImageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wi_rain_mix" />
+
+    <TextView
+        android:id="@+id/weatherTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="25°C"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherImageView1" />
+
+    <ImageView
+        android:id="@+id/weatherImageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        app:layout_constraintStart_toEndOf="@+id/weatherImageView1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wi_rain_mix" />
+
+    <TextView
+        android:id="@+id/weatherTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        android:text="25°C"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/weatherTextView1"
+        app:layout_constraintTop_toBottomOf="@+id/weatherImageView2" />
+
+    <ImageView
+        android:id="@+id/weatherImageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        app:layout_constraintStart_toEndOf="@+id/weatherImageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wi_rain_mix" />
+
+    <TextView
+        android:id="@+id/weatherTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        android:text="25°C"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/weatherTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/weatherImageView3" />
+
+    <ImageView
+        android:id="@+id/weatherImageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        app:layout_constraintStart_toEndOf="@+id/weatherImageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wi_rain_mix" />
+
+    <TextView
+        android:id="@+id/weatherTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        android:text="25°C"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/weatherTextView3"
+        app:layout_constraintTop_toBottomOf="@+id/weatherImageView4" />
+
+    <ImageView
+        android:id="@+id/weatherImageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        app:layout_constraintStart_toEndOf="@+id/weatherImageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wi_rain_mix" />
+
+    <TextView
+        android:id="@+id/weatherTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        android:text="25°C"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/weatherTextView4"
+        app:layout_constraintTop_toBottomOf="@+id/weatherImageView5" />
+
+    <ImageView
+        android:id="@+id/weatherImageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        app:layout_constraintStart_toEndOf="@+id/weatherImageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wi_rain_mix" />
+
+    <TextView
+        android:id="@+id/weatherTextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        android:text="25°C"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/weatherTextView5"
+        app:layout_constraintTop_toBottomOf="@+id/weatherImageView6" />
+
+    <ImageView
+        android:id="@+id/weatherImageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        app:layout_constraintStart_toEndOf="@+id/weatherImageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wi_rain_mix" />
+
+    <TextView
+        android:id="@+id/weatherTextView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        android:text="25°C"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/weatherTextView6"
+        app:layout_constraintTop_toBottomOf="@+id/weatherImageView7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
