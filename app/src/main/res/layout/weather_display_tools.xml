@@ -6,21 +6,99 @@
     android:layout_height="match_parent"
     android:background="@drawable/color_background">
 
+    <TextView
+        android:id="@+id/weatherDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/start_margin"
+        android:text="@string/temp_date"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/weatherImageView1"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/weatherDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        android:text="@string/temp_date"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/weatherImageView2"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView2"
+        app:layout_constraintStart_toEndOf="@+id/weatherDate1" />
+
+    <TextView
+        android:id="@+id/weatherDate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        android:text="@string/temp_date"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/weatherImageView3"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView3"
+        app:layout_constraintStart_toEndOf="@+id/weatherDate2" />
+
+    <TextView
+        android:id="@+id/weatherDate4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        android:text="@string/temp_date"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/weatherImageView4"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView4"
+        app:layout_constraintStart_toEndOf="@+id/weatherDate3" />
+
+    <TextView
+        android:id="@+id/weatherDate5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        android:text="@string/temp_date"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/weatherImageView5"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView5"
+        app:layout_constraintStart_toEndOf="@+id/weatherDate4" />
+
+    <TextView
+        android:id="@+id/weatherDate6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        android:text="@string/temp_date"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/weatherImageView6"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView6"
+        app:layout_constraintStart_toEndOf="@+id/weatherDate5" />
+
+    <TextView
+        android:id="@+id/weatherDate7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/weatherMargin"
+        android:text="@string/temp_date"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/weatherImageView7"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView7"
+        app:layout_constraintStart_toEndOf="@+id/weatherDate6" />
+
     <ImageView
         android:id="@+id/weatherImageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherDate1"
         app:srcCompat="@drawable/wi_rain_mix" />
 
     <TextView
         android:id="@+id/weatherTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="25°C"
+        android:layout_marginStart="@dimen/start_margin"
+        android:text="@string/temp_temp"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/weatherImageView1" />
 
@@ -30,7 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/weatherMargin"
         app:layout_constraintStart_toEndOf="@+id/weatherImageView1"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherDate2"
         app:srcCompat="@drawable/wi_rain_mix" />
 
     <TextView
@@ -38,8 +116,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/weatherMargin"
-        android:text="25°C"
+        android:text="@string/temp_temp"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView2"
         app:layout_constraintStart_toEndOf="@+id/weatherTextView1"
         app:layout_constraintTop_toBottomOf="@+id/weatherImageView2" />
 
@@ -49,7 +128,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/weatherMargin"
         app:layout_constraintStart_toEndOf="@+id/weatherImageView2"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherDate3"
         app:srcCompat="@drawable/wi_rain_mix" />
 
     <TextView
@@ -57,8 +136,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/weatherMargin"
-        android:text="25°C"
+        android:text="@string/temp_temp"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView3"
         app:layout_constraintStart_toEndOf="@+id/weatherTextView2"
         app:layout_constraintTop_toBottomOf="@+id/weatherImageView3" />
 
@@ -68,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/weatherMargin"
         app:layout_constraintStart_toEndOf="@+id/weatherImageView3"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherDate4"
         app:srcCompat="@drawable/wi_rain_mix" />
 
     <TextView
@@ -76,8 +156,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/weatherMargin"
-        android:text="25°C"
+        android:text="@string/temp_temp"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView4"
         app:layout_constraintStart_toEndOf="@+id/weatherTextView3"
         app:layout_constraintTop_toBottomOf="@+id/weatherImageView4" />
 
@@ -87,7 +168,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/weatherMargin"
         app:layout_constraintStart_toEndOf="@+id/weatherImageView4"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherDate5"
         app:srcCompat="@drawable/wi_rain_mix" />
 
     <TextView
@@ -95,8 +176,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/weatherMargin"
-        android:text="25°C"
+        android:text="@string/temp_temp"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView5"
         app:layout_constraintStart_toEndOf="@+id/weatherTextView4"
         app:layout_constraintTop_toBottomOf="@+id/weatherImageView5" />
 
@@ -106,7 +188,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/weatherMargin"
         app:layout_constraintStart_toEndOf="@+id/weatherImageView5"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherDate6"
         app:srcCompat="@drawable/wi_rain_mix" />
 
     <TextView
@@ -114,8 +196,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/weatherMargin"
-        android:text="25°C"
+        android:text="@string/temp_temp"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView6"
         app:layout_constraintStart_toEndOf="@+id/weatherTextView5"
         app:layout_constraintTop_toBottomOf="@+id/weatherImageView6" />
 
@@ -125,7 +208,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/weatherMargin"
         app:layout_constraintStart_toEndOf="@+id/weatherImageView6"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherDate7"
         app:srcCompat="@drawable/wi_rain_mix" />
 
     <TextView
@@ -133,8 +216,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/weatherMargin"
-        android:text="25°C"
+        android:text="@string/temp_temp"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImageView7"
         app:layout_constraintStart_toEndOf="@+id/weatherTextView6"
         app:layout_constraintTop_toBottomOf="@+id/weatherImageView7" />
 </androidx.constraintlayout.widget.ConstraintLayout>

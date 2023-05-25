@@ -8,11 +8,13 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/temperatureText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_start"
+        android:layout_marginTop="20dp"
         android:text="Temp text"
         android:textColor="@color/white"
-        android:layout_marginStart="@dimen/normal_start"
         android:textSize="50sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,21 +23,81 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/normal_start"
-        android:layout_marginTop="48dp"
         android:text="@string/weather_today"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintBottom_toTopOf="@+id/weatherDegree"
         app:layout_constraintStart_toStartOf="parent" />
 
     <include
-        android:id="@+id/include"
+        android:id="@+id/weatherDegree"
+        layout="@layout/weather_display_tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="@dimen/normal_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_start"
+        android:text="@string/rain_probability"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/weatherRain"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/weatherRain"
         layout="@layout/weather_display_tools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/normal_start"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/weatherDegree" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_start"
+        android:text="@string/cloud_percentage"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/weatherUV"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/weatherUV"
+        layout="@layout/weather_display_tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_start"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherRain" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_start"
+        android:layout_marginTop="80dp"
+        android:text="Temp text"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherUV" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temp text"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

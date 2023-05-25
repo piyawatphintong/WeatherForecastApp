@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Weather Forecast App</string>
     <string name="weather_today">Weather Today</string>
+    <string name="rain_probability">Rain Probability</string>
+    <string name="temp_temp">25°C</string>
+    <string name="temp_date">date</string>
+    <string name="cloud_percentage">Cloud Percentage</string>
 </resources>
